@@ -1,0 +1,9 @@
+Package: humanFormat
+Type: Package
+Title: Format numbers into human readable strings
+Version: 1.0
+Date: 2013-11-22
+Author: Dustin Sallings
+Maintainer: Dustin Sallings <dustin@spy.net>
+Description: Format all the things.
+License: MIT
