@@ -1,4 +1,5 @@
 \name{durationConstants}
+\alias{durationConstants}
 \alias{kNanosecond}
 \alias{kMicrosecond}
 \alias{kMillisecond}

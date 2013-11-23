@@ -30,6 +30,15 @@ test_that("individual negative duration formatting works", {
 		formatDuration(neg(32 * 24 * kHour + 4 * kMinute + 13 * kMillisecond)))
 })
 
+test_that("converted durations format", {
+	expect_equal("13ns", formatNanoseconds(13))
+	expect_equal("13µs", formatNanoseconds(13000))
+	expect_equal("13µs", formatMicroseconds(13))
+	expect_equal("13ms", formatMicroseconds(13000))
+	expect_equal("13ms", formatMilliseconds(13))
+	expect_equal("13s", formatMilliseconds(13000))
+})
+
 test_that("vector duration formatting works", {
 	expect_equal(c("0", "1ns", "1.1µs", "2.2ms", "3.3s",
 		"4m5.000000000s", "4m5.001000000s", 

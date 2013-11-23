@@ -31,3 +31,17 @@ formatDuration <- function(ns) {
 			formatDurationMinute(ns),
 			formatDurationSmall(ns)), sep="")
 }
+
+formatNanoseconds <- formatDuration
+
+formatMicroseconds <- function(us) {
+	formatNanoseconds(us * kMicrosecond)
+}
+
+formatMilliseconds <- function(ms) {
+	formatNanoseconds(ms * kMillisecond)
+}
+
+formatSeconds <- function(s) {
+	formatNanoseconds(s * kSecond)
+}

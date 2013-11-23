@@ -1,4 +1,9 @@
 export(formatDuration)
+export(formatNanoseconds)
+export(formatMicroseconds)
+export(formatMilliseconds)
+export(formatSeconds)
+
 export(kNanosecond)
 export(kMicrosecond)
 export(kMillisecond)
