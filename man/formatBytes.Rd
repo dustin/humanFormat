@@ -10,11 +10,9 @@ Format a number of bytes into a human readable string.
   \item{fmt}{String format for the numeric part of the bytes (defaults to \%.2f)}
 }
 \usage{
-  formatBytes(b)
-  formatSIBytes(b)
-  formatIECBytes(b)
-
-  formatBytes(b, fmt="\%.1f")
+  formatBytes(b, fmt="\%.2f")
+  formatSIBytes(b, fmt="\%.2f")
+  formatIECBytes(b, fmt="\%.2f")
 }
 \description{
   Formats a number of bytes into a human readable string.
