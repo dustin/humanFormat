@@ -5,3 +5,7 @@ export(kMillisecond)
 export(kSecond)
 export(kMinute)
 export(kHour)
+
+export(formatBytes)
+export(formatIECBytes)
+export(formatSIBytes)
