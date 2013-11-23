@@ -7,3 +7,5 @@ Author: Dustin Sallings
 Maintainer: Dustin Sallings <dustin@spy.net>
 Description: Format all the things.
 License: MIT
+URL: https://github.com/dustin/humanFormat
+BugReports: https://github.com/dustin/humanFormat/issues
