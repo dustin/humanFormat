@@ -11,8 +11,7 @@ often useful to format the numbers into human readable units.
 \details{
   \itemize{
   \item \code{\link{formatDuration}}: format durations
-  \item \code{\link{durationConstants}}: size constants
-  \item \code{\link{formatBytes}}: format byte sizes
+   \item \code{\link{formatBytes}}: format byte sizes
   }
 \tabular{ll}{
 Package: \tab humanFormat\cr
