@@ -18,14 +18,16 @@ formatDurationHour <- function(ns) {
 }
 
 formatDurationMinute <- function(ns) {
-	ifelse(abs(ns) > kHour,
+	ifelse(ns > kHour,
 		formatDurationHour(ns),
 		sprintf("%.0fm%ss", ns/kMinute,
 			format((ns %% kMinute) / kSecond, digits=9, scientific=F)))
 }
 
 formatDuration <- function(ns) {
-	ifelse(abs(ns) > kMinute,
-		formatDurationMinute(ns),
-		formatDurationSmall(ns))
+	prefix <- ifelse(ns < 0, "-", "")
+	ns <- abs(ns)
+	paste(prefix, ifelse(ns > kMinute,
+			formatDurationMinute(ns),
+			formatDurationSmall(ns)), sep="")
 }
