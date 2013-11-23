@@ -7,6 +7,6 @@ Date: 2013-11-22
 Author: Dustin Sallings
 Maintainer: Dustin Sallings <dustin@spy.net>
 Description: Format all the things.
-License: MIT
+License: MIT + file LICENSE
 URL: https://github.com/dustin/humanFormat
 BugReports: https://github.com/dustin/humanFormat/issues
