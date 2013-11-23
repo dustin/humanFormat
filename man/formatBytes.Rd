@@ -7,7 +7,7 @@ Format a number of bytes into a human readable string.
 }
 \arguments{
   \item{b}{Number of bytes}
-  \item{fmt}{String format for the numeric part of the bytes (defaults to \%.2f)}
+  \item{fmt}{String format for the numeric part of the bytes}
 }
 \usage{
   formatBytes(b, fmt="\%.2f")
