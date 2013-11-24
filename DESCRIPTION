@@ -1,12 +1,12 @@
 Package: humanFormat
 Type: Package
 Depends: testthat
-Title: Format numbers into human readable strings
+Title: Human-friendly formatting functions
 Version: 1.0
 Date: 2013-11-22
 Author: Dustin Sallings
 Maintainer: Dustin Sallings <dustin@spy.net>
-Description: Format all the things.
+Description: Format quantities of time or bytes into human-friendly strings.
 License: MIT + file LICENSE
 URL: https://github.com/dustin/humanFormat
 BugReports: https://github.com/dustin/humanFormat/issues
