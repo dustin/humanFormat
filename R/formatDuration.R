@@ -6,7 +6,7 @@ kMinute <- kSecond * 60
 kHour <- kMinute * 60
 
 formatDurationSmall <- function(ns) {
-    sizes <- c('ns', '\u00b5s', 'ms', 's')
+    sizes <- c('ns', 'us', 'ms', 's')
     e <- ifelse(ns == 0, NA, floor(log(ns, 1000)))
     suffix <- ifelse(ns == 0, '', sizes[e+1])
     prefix <- ifelse(ns == 0, '0', sprintf("%g", ns/(1000 ^ floor(e))))
