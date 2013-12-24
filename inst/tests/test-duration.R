@@ -13,8 +13,9 @@ test_that("individual duration formatting works", {
 	expect_equal("4m5.001s", formatDuration(4*kMinute + 5001*kMillisecond))
 	expect_equal("5h6m7.001s", formatDuration(5*kHour + 6*kMinute + 7001*kMillisecond))
 	expect_equal("8m0.000000001s", formatDuration(8*kMinute + 1*kNanosecond))
-	expect_equal("768h4m0.013s",
-		formatDuration(32 * 24 * kHour + 4 * kMinute + 13 * kMillisecond))
+    expect_equal("32d4h", formatDuration(32 * 24 * kHour + 4 * kHour + 19 * kMinute))
+    expect_equal("17w4d", formatDuration(122 * kDay + 14 * kHour))
+    expect_equal("2y70d", formatDuration(2 * kYear + 70 * kDay))
 })
 
 test_that("individual negative duration formatting works", {
@@ -26,8 +27,9 @@ test_that("individual negative duration formatting works", {
 	expect_equal("-4m5.001s", formatDuration(neg(4*kMinute + 5001*kMillisecond)))
 	expect_equal("-5h6m7.001s", formatDuration(neg(5*kHour + 6*kMinute + 7001*kMillisecond)))
 	expect_equal("-8m0.000000001s", formatDuration(neg(8*kMinute + 1*kNanosecond)))
-	expect_equal("-768h4m0.013s",
-		formatDuration(neg(32 * 24 * kHour + 4 * kMinute + 13 * kMillisecond)))
+	expect_equal("-32d4h", formatDuration(neg(32 * 24 * kHour + 4 * kHour + 19 * kMinute)))
+    expect_equal("-17w4d", formatDuration(neg(122 * kDay + 14 * kHour)))
+    expect_equal("-2y70d", formatDuration(neg(2 * kYear + 70 * kDay)))
 })
 
 test_that("converted durations format", {
