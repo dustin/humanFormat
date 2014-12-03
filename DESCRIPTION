@@ -1,7 +1,7 @@
 Package: humanFormat
 Type: Package
 Depends: testthat
-Title: Human-friendly formatting functions
+Title: Human-Friendly Formatting Functions
 Version: 1.1
 Date: 2013-11-22
 Author: Dustin Sallings
