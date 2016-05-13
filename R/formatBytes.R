@@ -6,11 +6,13 @@ formatAnyBytes <- function(b, base, fmt, sizes) {
 }
 
 formatIECBytes <- function(b, fmt="%.2f") {
-	formatAnyBytes(b, 1024, fmt, c("", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"))
+	formatAnyBytes(b, 1024, fmt, c("", " KiB", " MiB", " GiB", " TiB",
+                                   " PiB", " EiB", " ZiB", " YiB"))
 }
 
 formatSIBytes <- function(b, fmt="%.2f") {
-	formatAnyBytes(b, 1000, fmt, c("", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"))
+	formatAnyBytes(b, 1000, fmt, c("", " KB", " MB", " GB", " TB",
+                                   " PB", " EB", " ZB", " YB"))
 }
 
 formatBytes <- formatSIBytes
