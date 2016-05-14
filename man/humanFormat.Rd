@@ -16,9 +16,10 @@ often useful to format the numbers into human readable units.
 \tabular{ll}{
 Package: \tab humanFormat\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2013-11-22\cr
+Version: \tab 1.1\cr
+Date: \tab 2016-05-13\cr
 License: \tab MIT\cr
+BugReports: \tab https://github.com/dustin/humanFormat/issues\cr
 }
 }
 \author{

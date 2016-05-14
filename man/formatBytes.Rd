@@ -21,12 +21,12 @@ Format a number of bytes into a human readable string.
   specify IEC sizes by using \code{formatIECBytes}.
 }
 \examples{
-  # returns "934.82MB"
+  # returns "934.82 MB"
   formatBytes(934818582)
 
-  # returns "891.51MiB"
+  # returns "891.51 MiB"
   formatIECBytes(934818582)
 
-  # returns c("8.43KB", "3.52KB", "624.62KB", "46", "7.36KB")
+  # returns c("8.43 KB", "3.52 KB", "624.62 KB", "46", "7.36 KB")
   formatBytes(c(8429, 3525, 624624, 46, 7357))
 }
