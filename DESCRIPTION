@@ -2,8 +2,8 @@ Package: humanFormat
 Type: Package
 Depends: testthat
 Title: Human-Friendly Formatting Functions
-Version: 1.1
-Date: 2013-11-22
+Version: 1.2
+Date: 2022-07-25
 Author: Dustin Sallings
 Maintainer: Dustin Sallings <dustin@spy.net>
 Description: Format quantities of time or bytes into human-friendly strings.
