@@ -27,7 +27,4 @@ Dustin Sallings
 
 Maintainer: Dustin Sallings <dustin@spy.net>
 }
-\keyword{ package
-format
-label
-}
+\keyword{format}
